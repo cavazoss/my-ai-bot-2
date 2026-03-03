@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Assistant 2026</title>
+    <style>
+        body { background-color: #121212; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .welcome { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="welcome">
+        <h1>Твой личный ИИ-помощник</h1>
+        <p>Нажми на иконку в углу, чтобы начать чат</p>
+    </div>
+
+    <!-- ТВОЙ КОД ИЗ COZE -->
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+    <script>
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7613003837405986821',
+        },
+        componentProps: {
+          title: 'NeuroHelper',
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_********', //pat_mSxs1fzt3BuJJW4xBL0RRcIqymBm4iUpaKRK4Re8u65aCHEdV6Uy5aqOcvBHynji
+          onRefreshToken: function () {
+            return 'pat_********' //pat_mSxs1fzt3BuJJW4xBL0RRcIqymBm4iUpaKRK4Re8u65aCHEdV6Uy5aqOcvBHynji
+          }
+        }
+      });
+    </script>
+</body>
+</html>
